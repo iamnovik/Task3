@@ -10,12 +10,12 @@ Shared.moves = moves;
 
 if (moves.Length == 0)
 {
-    Console.WriteLine("You need to give moves.\n Count of moves must be even and > 1");
+    Console.WriteLine("You need to give moves.\nCount of moves must be even and > 1");
     return 0;
 }
-if (moves.Length / 2 == 0)
+if (moves.Length <= 1 || moves.Length % 2 == 0)
 {
-    Console.WriteLine("Wrong count of moves.\n Count of moves must be even and >1");
+    Console.WriteLine("Wrong count of moves.\nCount of moves must be even and >1");
     return 0;
 }
 
