@@ -44,7 +44,7 @@ do
     }
 } while (!Menu.IsCorrectGameMove(moveUser));
 
-if (moveUser != '0')
+if (moveUser != 0)
 {
     moveUser--;
     Menu.WriteMove(moveUser,Shared.Player.User);
